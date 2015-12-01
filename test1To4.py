@@ -63,6 +63,23 @@ class Test1To4(unittest.TestCase):
 		self.assertEqual(jsonObjectTotalVotes["valid_votes"], 0)
 		self.assertEqual(jsonObjectTotalVotes["blank_votes"], 0)
 		self.assertEqual(jsonObjectTotalVotes["null_votes"], 4)
+
+	# Prueba en el que haya una variedad de votos (nulos, blancos y válidos)
+	# Asociado a: test-variety_votes.tar.gz
+	def test_04(self):
+		os.system('agora-results -t testCases/test-variety_votes.tar.gz -s > results')		
+
+		f = open("results", "r")
+		data = f.read()
+		f.close()	
+
+		jsonObject = json.loads(data)
+
+		jsonObjectTotalVotes = jsonObject["questions"][0]["totals"]
+
+		self.assertEqual(jsonObjectTotalVotes["valid_votes"], 2)
+		self.assertEqual(jsonObjectTotalVotes["blank_votes"], 2)
+		self.assertEqual(jsonObjectTotalVotes["null_votes"], 2)
 		
 if __name__=='__main__':
    unittest.main()
