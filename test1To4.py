@@ -46,7 +46,23 @@ class Test1To4(unittest.TestCase):
 		self.assertEqual(jsonObjectTotalVotes["valid_votes"], 0)
 		self.assertEqual(jsonObjectTotalVotes["blank_votes"], 4)
 		self.assertEqual(jsonObjectTotalVotes["null_votes"], 0)
+	
+	# Prueba en el que todos los votos son en nulo
+	# Asociado a: test-null_votes.tar.gz
+	def test_03(self):
+		os.system('agora-results -t testCases/test-null_votes.tar.gz -s > results')		
 
+		f = open("results", "r")
+		data = f.read()
+		f.close()	
+
+		jsonObject = json.loads(data)
+
+		jsonObjectTotalVotes = jsonObject["questions"][0]["totals"]
+
+		self.assertEqual(jsonObjectTotalVotes["valid_votes"], 0)
+		self.assertEqual(jsonObjectTotalVotes["blank_votes"], 0)
+		self.assertEqual(jsonObjectTotalVotes["null_votes"], 4)
 		
 if __name__=='__main__':
    unittest.main()
