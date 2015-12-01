@@ -1,0 +1,2 @@
+Requirement already satisfied (use --upgrade to upgrade): unittest-xml-reporting in /home/gaems-dev/.virtualenvs/agora-results/lib/python3.4/site-packages
+Requirement already satisfied (use --upgrade to upgrade): six>=1.4.0 in /home/gaems-dev/.virtualenvs/agora-results/lib/python3.4/site-packages (from unittest-xml-reporting)
