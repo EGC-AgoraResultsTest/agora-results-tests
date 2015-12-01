@@ -80,5 +80,31 @@ class Test5To8(unittest.TestCase):
 		self.assertEqual(jsonObjectTotalVotes["blank_votes"], 1)
 		self.assertEqual(jsonObjectTotalVotes["null_votes"], 1)
 
+	# Prueba en la que existe un empate en una situación con 2 ganadores como máximo
+	# Asignado a: test-tie_in_ordinary_situation_with2maxwinners.tar.gz
+	def test_tie_in_ordinary_situation_with2maxwinners(self):
+		os.system('agora-results -t testCases/test-tie_in_ordinary_situation_with2maxwinners.tar.gz -s > results')		
+
+		f = open("results", "r")
+		data = f.read()
+		f.close()	
+
+		jsonObject = json.loads(data)
+
+		jsonObjectTotalVotes = jsonObject["questions"][0]["totals"]
+
+		jsonObjectAnswers = jsonObject["questions"][0]["answers"]
+
+		self.assertEqual(jsonObjectAnswers[0]["winner_position"], 0)
+		self.assertEqual(jsonObjectAnswers[1]["winner_position"], 1)
+		self.assertEqual(jsonObjectAnswers[2]["winner_position"], None)
+
+		self.assertEqual(jsonObjectAnswers[0]["text"], "Opcion 1")
+		self.assertEqual(jsonObjectAnswers[1]["text"], "Opcion 2")
+
+		self.assertEqual(jsonObjectTotalVotes["valid_votes"], 4)
+		self.assertEqual(jsonObjectTotalVotes["blank_votes"], 0)
+		self.assertEqual(jsonObjectTotalVotes["null_votes"], 0)
+
 if __name__=='__main__':
    unittest.main()
