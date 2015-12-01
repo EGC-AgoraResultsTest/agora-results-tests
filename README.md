@@ -13,10 +13,16 @@ Este entorno virtual se puede instalar desde la guía documentada en la propia A
 
 Se usa PyBuilder para ejecutar los tests automáticamente. Es necesario tener instalado previamente PyBuilder.
 
-Para instalarlo se debe de usar el siguiente comando: pip install pybuilder
+Para instalarlo se debe de usar el siguiente comando
+
+```sh
+pip install pybuilder
+```
 
 # Uso
 
 Para ejecutar los test se debe de usar el siguiente comando
 
-pyb
+```sh
+$ pyb
+```
