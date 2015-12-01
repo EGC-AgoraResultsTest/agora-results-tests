@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="1To4_tests.OneToFour_Tests-20151201160405" tests="4" time="0.489">
+	<testcase classname="1To4_tests.OneToFour_Tests" name="test_01" time="0.137"/>
+	<testcase classname="1To4_tests.OneToFour_Tests" name="test_02" time="0.116"/>
+	<testcase classname="1To4_tests.OneToFour_Tests" name="test_03" time="0.119"/>
+	<testcase classname="1To4_tests.OneToFour_Tests" name="test_04" time="0.116"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

@@ -7,7 +7,7 @@ import unittest
 import utils
 
 
-class OneToFour_Tests(unittest.TestCase):
+class tests(unittest.TestCase):
 
 	# Prueba de un caso en el que todos los votos sean válidos
 	# Asociado a: test_01.tar.gz

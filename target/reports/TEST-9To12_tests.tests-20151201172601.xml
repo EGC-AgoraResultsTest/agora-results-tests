@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="2" name="9To12_tests.tests-20151201172601" tests="4" time="0.458">
+	<testcase classname="9To12_tests.tests" name="test_09" time="0.114"/>
+	<testcase classname="9To12_tests.tests" name="test_12" time="0.112"/>
+	<testcase classname="9To12_tests.tests" name="test_10" time="0.115">
+		<failure message="0 != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/gaems-dev/Escritorio/EGC/agora-results-tests/src/unittest/python/9To12_tests.py", line 45, in test_10
+    self.assertEqual(jsonObjectAnswers[0]["winner_position"], None)
+AssertionError: 0 != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="9To12_tests.tests" name="test_11" time="0.117">
+		<failure message="1 != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/gaems-dev/Escritorio/EGC/agora-results-tests/src/unittest/python/9To12_tests.py", line 66, in test_11
+    self.assertEqual(jsonObjectAnswers[1]["winner_position"], None)
+AssertionError: 1 != None
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
