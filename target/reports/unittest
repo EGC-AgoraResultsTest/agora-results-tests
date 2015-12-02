@@ -1,49 +1,49 @@
 
 Running tests...
 ----------------------------------------------------------------------
-.FFF.FF.....
+.FFF.....FF.....
 ======================================================================
-FAIL [0.122s]: test_06 (5To8_tests.tests)
+FAIL [0.299s]: test_06 (5To8_tests.tests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/gaems-dev/Escritorio/EGC/agora-results-tests/src/unittest/python/5To8_tests.py", line 37, in test_06
+  File "/home/gaems-dev/git/agora-results-tests/src/unittest/python/5To8_tests.py", line 37, in test_06
     self.assertEqual(jsonObjectAnswers[0]["winner_position"], None)
 AssertionError: 0 != None
 
 ======================================================================
-FAIL [0.118s]: test_07 (5To8_tests.tests)
+FAIL [0.322s]: test_07 (5To8_tests.tests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/gaems-dev/Escritorio/EGC/agora-results-tests/src/unittest/python/5To8_tests.py", line 57, in test_07
+  File "/home/gaems-dev/git/agora-results-tests/src/unittest/python/5To8_tests.py", line 57, in test_07
     self.assertEqual(jsonObjectAnswers[0]["winner_position"], None)
 AssertionError: 0 != None
 
 ======================================================================
-FAIL [0.125s]: test_08 (5To8_tests.tests)
+FAIL [0.305s]: test_08 (5To8_tests.tests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/gaems-dev/Escritorio/EGC/agora-results-tests/src/unittest/python/5To8_tests.py", line 77, in test_08
+  File "/home/gaems-dev/git/agora-results-tests/src/unittest/python/5To8_tests.py", line 77, in test_08
     self.assertEqual(jsonObjectAnswers[0]["winner_position"], None)
 AssertionError: 0 != None
 
 ======================================================================
-FAIL [0.116s]: test_10 (9To12_tests.tests)
+FAIL [0.311s]: test_10 (9To12_tests.tests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/gaems-dev/Escritorio/EGC/agora-results-tests/src/unittest/python/9To12_tests.py", line 45, in test_10
+  File "/home/gaems-dev/git/agora-results-tests/src/unittest/python/9To12_tests.py", line 45, in test_10
     self.assertEqual(jsonObjectAnswers[0]["winner_position"], None)
 AssertionError: 0 != None
 
 ======================================================================
-FAIL [0.112s]: test_11 (9To12_tests.tests)
+FAIL [0.328s]: test_11 (9To12_tests.tests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/gaems-dev/Escritorio/EGC/agora-results-tests/src/unittest/python/9To12_tests.py", line 66, in test_11
+  File "/home/gaems-dev/git/agora-results-tests/src/unittest/python/9To12_tests.py", line 66, in test_11
     self.assertEqual(jsonObjectAnswers[1]["winner_position"], None)
 AssertionError: 1 != None
 
 ----------------------------------------------------------------------
-Ran 12 tests in 1.420s
+Ran 16 tests in 4.958s
 
 FAILED (failures=5)
 

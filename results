@@ -3,48 +3,36 @@
         {
             "answers": [
                 {
-                    "id": 1,
-                    "text": "Opcion 2",
-                    "total_count": 4,
-                    "winner_position": 0
-                },
-                {
                     "id": 0,
                     "text": "Opcion 1",
                     "total_count": 2,
+                    "winner_position": 0
+                },
+                {
+                    "id": 1,
+                    "text": "Opcion 2",
+                    "total_count": 0,
                     "winner_position": null
                 },
                 {
                     "id": 2,
                     "text": "Opcion 3",
-                    "total_count": 2,
-                    "winner_position": null
-                },
-                {
-                    "id": 3,
-                    "text": "Opcion 4",
-                    "total_count": 2,
-                    "winner_position": null
-                },
-                {
-                    "id": 4,
-                    "text": "Opcion 5",
-                    "total_count": 2,
+                    "total_count": 0,
                     "winner_position": null
                 }
             ],
-            "max": 4,
-            "min": 2,
+            "max": 1,
+            "min": 1,
             "num_winners": 1,
             "tally_type": "plurality-at-large",
             "title": "Tally de prueba",
             "totals": {
-                "blank_votes": 0,
-                "null_votes": 4,
-                "valid_votes": 4
+                "blank_votes": 2,
+                "null_votes": 2,
+                "valid_votes": 2
             },
             "winners": []
         }
     ],
-    "total_votes": 8
+    "total_votes": 6
 }
