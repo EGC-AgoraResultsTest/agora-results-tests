@@ -1,7 +1,7 @@
 *~
 *.xml
 *.pyc
-target/reports/unittest
-target/reports/coverage.json
-target/reports/unittest.json
+target/reports/
+target/dist/
+target/logs/
 *.err
