@@ -24,7 +24,7 @@ class tests(unittest.TestCase):
 
 	# Prueba en la que no haya ganador si no hay votos
 	# Asignado a: test_06
-	def test_06(self):
+	def test_no_winner_without_votes(self):
 
 		utils.executeAgoraResults('test_06')	
 
@@ -44,7 +44,7 @@ class tests(unittest.TestCase):
 
 	# Prueba de que no haya ganador si todos los votos son en blanco
 	# Asignado a: test_07.tar.gz
-	def test_07(self):
+	def test_no_winner_with_blank_votes(self):
 
 		utils.executeAgoraResults('test_07')	
 
@@ -64,7 +64,7 @@ class tests(unittest.TestCase):
 
 	# Prueba de que no hay ganador con todos los votos nulos
 	# Asignado a: test_08.tar.gz
-	def test_08(self):
+	def test_no_winner_with_null_votes(self):
 
 		utils.executeAgoraResults('test_08')	
 
