@@ -10,7 +10,7 @@ class tests(unittest.TestCase):
 
 	# Prueba en la que existe un ganador bajo una situación normal
 	# Asignado a: test_09.tar.gz
-	def test_09(self):
+	def test_normal_winner(self):
 		
 		utils.executeAgoraResults('test_09')	
 
@@ -32,7 +32,7 @@ class tests(unittest.TestCase):
 	
 	# Prueba en la que existe un empate bajo una situación normal
 	# Asignado a: test_10.tar.gz
-	def test_10(self):
+	def test_tie_of_winners(self):
 		
 		utils.executeAgoraResults('test_10')	
 
@@ -52,7 +52,7 @@ class tests(unittest.TestCase):
 
 	# Prueba en la que existe un ganador en una situación con 2 ganadores como máximo
 	# Asignado a: test_11.tar.gz
-	def test_11(self):
+	def test_winner_with_two_max_winners(self):
 		
 		utils.executeAgoraResults('test_11')	
 
@@ -74,7 +74,7 @@ class tests(unittest.TestCase):
 
 	# Prueba en la que existe un empate en una situación con 2 ganadores como máximo
 	# Asignado a: test_12.tar.gz
-	def test_12(self):
+	def test_tie_with_two_max_winners(self):
 		
 		utils.executeAgoraResults('test_12')	
 
