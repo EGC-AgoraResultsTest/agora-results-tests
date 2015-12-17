@@ -1,3 +1,4 @@
+import os
 from pybuilder.core import use_plugin, init
 
 use_plugin("python.core")
@@ -13,3 +14,10 @@ default_task = "publish"
 @init
 def set_properties(project):
     pass
+
+@init
+def initial_setup():
+	# Instala la última versión disponible de Agora Results
+	#os.system('pip install git+https://github.com/garridev/agora-results.git@next -U')
+	pass
+
