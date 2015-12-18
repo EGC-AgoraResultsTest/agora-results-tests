@@ -17,3 +17,9 @@ def getJsonObjectFromResults():
 
 	# Devolvemos como objeto Json los datos del archivo
 	return json.loads(data)
+
+def getConfigJson(path):
+	f = open(path, "r")
+	data = f.read()
+	f.close()
+	return json.loads(data)
