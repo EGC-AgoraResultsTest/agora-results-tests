@@ -19,6 +19,11 @@ def set_properties(project):
 
 @init
 def initial_setup():
+	# Instala la dependencia OpenSTV
+	os.system('pip install -e git+https://github.com/agoravoting/openstv.git@next#egg=openstv')
+	# Instala la dependencia Agora-Tally
+	os.system('pip install -e git+https://github.com/agoravoting/agora-tally.git@next#egg=agora-tally')
+	
 	# Instala la última versión disponible de Agora Results
 	os.system('pip install git+https://github.com/garridev/agora-results.git@next -U')
 
