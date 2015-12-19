@@ -5,14 +5,22 @@
                 {
                     "id": 1,
                     "text": "Opcion 2",
+<<<<<<< HEAD
                     "total_count": 6,
+=======
+                    "total_count": 2,
+>>>>>>> 819ce5d870c2d238fd4ce71a199393b2d42fffd3
                     "winner_position": 0
                 },
                 {
                     "id": 0,
                     "text": "Opcion 1",
                     "total_count": 1,
+<<<<<<< HEAD
                     "winner_position": 1
+=======
+                    "winner_position": null
+>>>>>>> 819ce5d870c2d238fd4ce71a199393b2d42fffd3
                 },
                 {
                     "id": 2,
@@ -27,12 +35,22 @@
             "tally_type": "plurality-at-large",
             "title": "Tally de prueba",
             "totals": {
+<<<<<<< HEAD
                 "blank_votes": 1,
                 "null_votes": 1,
                 "valid_votes": 8
+=======
+                "blank_votes": 0,
+                "null_votes": 0,
+                "valid_votes": 4
+>>>>>>> 819ce5d870c2d238fd4ce71a199393b2d42fffd3
             },
             "winners": []
         }
     ],
+<<<<<<< HEAD
     "total_votes": 10
+=======
+    "total_votes": 4
+>>>>>>> 819ce5d870c2d238fd4ce71a199393b2d42fffd3
 }
