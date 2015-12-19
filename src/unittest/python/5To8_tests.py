@@ -10,7 +10,7 @@ class tests(unittest.TestCase):
 
 	# Prueba en la que no haya votos
 	# Asignado a: test_05.tar.gz
-	def test_05(self):
+	def test_no_votes(self):
 		
 		utils.executeAgoraResults('test_05')	
 

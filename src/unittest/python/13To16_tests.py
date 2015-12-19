@@ -10,7 +10,7 @@ class Test13To16(unittest.TestCase):
 
 	# Prueba de votos válidos en una situación en la que min=2 y max=4
 	# Asignado a: test_13.tar.gz
-	def test_13(self):
+	def test_valid_votes_with_min2max4(self):
 		utils.executeAgoraResults('test_13')	
 
 		jsonObject = utils.getJsonObjectFromResults()
@@ -30,7 +30,7 @@ class Test13To16(unittest.TestCase):
 
 	# Prueba de votos inválidos saliendo del rango en una situación en la que min=2 y max=4
 	# Asignado a: test_14.tar.gz
-	def test_14(self):
+	def test__invalid_votes_with_min2max4(self):
 		utils.executeAgoraResults('test_14')	
 
 		jsonObject = utils.getJsonObjectFromResults()
@@ -43,9 +43,9 @@ class Test13To16(unittest.TestCase):
 		self.assertEqual(jsonObjectTotalVotes["blank_votes"], 0)
 		self.assertEqual(jsonObjectTotalVotes["null_votes"], 3)
 
-	# Prueba de votos válidos en una situación en la que min=2 y max=4
+	# Prueba de votos de todo tipo en una situación en la que min=2 y max=4
 	# Asignado a: test_15.tar.gz
-	def test_15(self):
+	def test_all_types_votes_with_min2max4(self):
 		utils.executeAgoraResults('test_15')	
 
 		jsonObject = utils.getJsonObjectFromResults()
@@ -65,7 +65,7 @@ class Test13To16(unittest.TestCase):
 
 	# Prueba de dos ganadores en una situación en la que min=2 y max=4
 	# Asignado a: test_16.tar.gz
-	def test_16(self):
+	def test_two_winners_with_min2max4(self):
 		utils.executeAgoraResults('test_16')	
 
 		jsonObject = utils.getJsonObjectFromResults()

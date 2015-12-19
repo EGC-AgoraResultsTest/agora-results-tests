@@ -11,7 +11,7 @@ class tests(unittest.TestCase):
 
 	# Prueba de un caso en el que todos los votos sean válidos
 	# Asociado a: test_01.tar.gz
-	def test_01(self):
+	def test_valid_votes(self):
 
 		utils.executeAgoraResults('test_01')	
 
@@ -25,7 +25,7 @@ class tests(unittest.TestCase):
 
 	# Prueba en el que todos los vatos sean en blanco
 	# Asociado a: test_02.tar.gz
-	def test_02(self):
+	def test_blank_votes(self):
 
 		utils.executeAgoraResults('test_02')	
 
@@ -39,7 +39,7 @@ class tests(unittest.TestCase):
 	
 	# Prueba en el que todos los votos son en nulo
 	# Asociado a: test_03.tar.gz
-	def test_03(self):
+	def test_null_votes(self):
 
 		utils.executeAgoraResults('test_03')	
 
@@ -53,7 +53,7 @@ class tests(unittest.TestCase):
 
 	# Prueba en el que haya una variedad de votos (nulos, blancos y válidos)
 	# Asociado a: test_04.tar.gz
-	def test_04(self):
+	def test_all_types_of_votes(self):
 		
 		utils.executeAgoraResults('test_04')	
 
