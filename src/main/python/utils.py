@@ -1,6 +1,11 @@
 import os
 import json
 
+from importlib.machinery import SourceFileLoader
+
+def getPipe(name):
+	return SourceFileLoader(name, "/home/egc-dev/.virtualenvs/agora-results/lib/python3.4/site-packages/agora_results/pipes/"+name+".py").load_module()
+
 def executeAgoraResults(tally,config=None):
 	# Ejecutamos Agora-Results con el caso a prueba a probar.
   	# El resultado lo guardamos en un archivo, en formato Json

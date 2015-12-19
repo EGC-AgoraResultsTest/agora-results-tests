@@ -7,7 +7,9 @@ import unittest
 
 import utils
 
-from agora_results.pipes.results import do_tallies
+results = utils.getPipe("results")
+
+from results import do_tallies
 
 class results_tests(unittest.TestCase):
 	
