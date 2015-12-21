@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-from pybuilder.core import use_plugin, init
+from pybuilder.core import use_plugin, init, task, depends
 
 use_plugin("python.core")
 use_plugin("python.unittest")
@@ -17,8 +17,8 @@ default_task = "run_unit_tests"
 def set_properties(project):
     pass
 
-@init
-def initial_setup():
+@task
+def update_agora_results():
 	# Instala la última versión disponible de Agora Results
 	os.system('pip install git+https://github.com/garridev/agora-results.git@next -U')
 
