@@ -18,9 +18,9 @@ class Test17To20(unittest.TestCase):
 	def test_max_winners_cant_be_greater_than_number_of_options(self):
 		self.assertRaises(ValueError, utils.executeAgoraResults, 'test_18')	
 
-	# Prueba que el máximo de opciones a seleccionar no sea mayor a mínimo
+	# Prueba que el mínimo de opciones a seleccionar no sea menor que el mínimo
 	# Asignado a: test_19.tar.gz
-	def test_max_options_cant_be_greater_than_min(self):
+	def test_min_cant_be_greater_than_max(self):
 		self.assertRaises(ValueError, utils.executeAgoraResults, 'test_19')	
 
 	# Prueba que el máximo y el mínimo de opciones a seleccionar no sean cero
