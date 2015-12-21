@@ -11,9 +11,9 @@ Este entorno virtual se puede instalar desde la guía documentada en la propia A
 
 Para activar el entorno virtual deseado solo es necesario ejecutar el siguiente comando:
 
-'''sh
+```sh
 $ workon nombre_entorno
-'''
+```
 
 ## Instalación de Agora Results Tests
 
@@ -21,15 +21,15 @@ Si se desea crear un nuevo entorno virtual y hacer una instalación desde cero s
 
 El primer paso es crear ese entorno virtual y trabajar bajo él, esto se puede hacer con el comando
 
-'''sh
+```sh
 $ mkvirtualenv nombre_entorno
-'''
+```
 
 El segundo paso es clonar el proyecto con Git (la ruta del proyecto fue proporcionada por el equipo de trabajo).Una vez hecho esto, debemos situarnos con una terminal en la carpeta creada y ejecutar un archivo Shell:
 
-'''sh
+```sh
 $ sh install_agora_results_tests.sh
-'''
+```
 
 Con este Shell se instalarán en el entorno virtual todas las dependencias y el proyecto agora results, ademas de instalar y configurar pybuilder. Despues de esto solo haría falta ejecutar el proyecto. 
 
