@@ -4,6 +4,7 @@
 import os
 import json
 import unittest 
+import jsonschema
 
 import utils
 
@@ -12,12 +13,12 @@ from agora_results.pipes.results import do_tallies
 class results_tests(unittest.TestCase):
 	
 	def test_positive_check_config(self):
-		config = utils.getConfigJson("res/config/config.json")
+		config = json.loads('{"ignore_invalid_votes": true , "print_as_csv": true, "requestion_indexes": [0,1,2,3,4] , "reuse_results": true , "tallies_indexes": [0,1,2,3]}')
 		self.assertTrue(do_tallies.check_config(config))
 
-	def test_positive_execute(self):
-		config = utils.getConfigJson("res/config/config.json")
-		data = "574.tar.gz"
+	def test_negative_check_config(self):
+		config = json.loads('{"ignore_invalid_votes": 0}')
+		self.assertRaises(jsonschema.exceptions.ValidationError, do_tallies.check_config, config)
 
 if __name__=='__main__':
    unittest.main()
