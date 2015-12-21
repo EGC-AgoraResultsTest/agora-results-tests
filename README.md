@@ -9,17 +9,29 @@ Para que funcionen los tests se debe de estar seguro que se está en el entorno 
 
 Este entorno virtual se puede instalar desde la guía documentada en la propia Agora Results de Agora Voting
 
-## A tener en cuenta - PyBuilder
+Para activar el entorno virtual deseado solo es necesario ejecutar el siguiente comando:
 
-Se usa PyBuilder para ejecutar los tests automáticamente, además de construir la aplicación y tener en cuenta las dependencias.
+'''sh
+$ workon nombre_entorno
+'''
 
-Para tener implementado esta tecnologia se debe de instalar y posteriormente, desde la ruta donde se encuentra el archivo build.py, instalar las depedencias que hubiese.
+## Instalación de Agora Results Tests
 
-```sh
-$ pip install pybuilder
-$ pyb install_dependencies
-```
+Si se desea crear un nuevo entorno virtual y hacer una instalación desde cero se tiene que seguir este procedimiento para la instalación:
 
+El primer paso es crear ese entorno virtual y trabajar bajo él, esto se puede hacer con el comando
+
+'''sh
+$ mkvirtualenv nombre_entorno
+'''
+
+El segundo paso es clonar el proyecto con Git (la ruta del proyecto fue proporcionada por el equipo de trabajo).Una vez hecho esto, debemos situarnos con una terminal en la carpeta creada y ejecutar un archivo Shell:
+
+'''sh
+$ sh install_agora_results_tests.sh
+'''
+
+Con este Shell se instalarán en el entorno virtual todas las dependencias y el proyecto agora results, ademas de instalar y configurar pybuilder. Despues de esto solo haría falta ejecutar el proyecto. 
 
 ## Uso
 
