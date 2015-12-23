@@ -7,12 +7,16 @@ import unittest
 import utils
 
 class Test17To20(unittest.TestCase):
-
+	
+	#COMENTADO DEBIDO A QUE LA APLICACIÓN NO PERMITE CONTROLAR ESTE ERROR
 	# Prueba que el máximo de ganadores no puede ser 0
 	# Asignado a: test_17.tar.gz
 	#def test_max_winners_cant_be_0(self):
 	#	utils.executeAgoraResults('test_17')
-	#	self.assertRaises(ValueError, utils.getJsonObjectFromResults)	
+	#	jsonData = utils.getJsonObjectFromResults()
+	#
+	#	max_winners = jsonData["questions"][0]["num_winners"]
+	#	self.assertRaises(AssertionError, self.assertTrue, max_winners!=0)	
 
 	# Prueba que el máximo de ganadores no puede ser mayor que el número de propuestas
 	# Asignado a: test_18.tar.gz
