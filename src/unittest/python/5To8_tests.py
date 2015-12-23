@@ -23,7 +23,7 @@ class tests(unittest.TestCase):
 		self.assertEqual(jsonObjectTotalVotes["null_votes"], 0)
 
 	# Prueba en la que no haya ganador si no hay votos
-	# Asignado a: test_06
+	# Asignado a: test_06.tar.gz
 	def test_no_winner_without_votes(self):
 
 		utils.executeAgoraResults('test_06')	
